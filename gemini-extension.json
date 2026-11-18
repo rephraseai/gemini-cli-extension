@@ -1,0 +1,20 @@
+{
+  "name": "rephraseai",
+  "version": "0.1.0",
+  "description": "Rephrase text without leaving the terminal. This Gemini CLI extension connects to Rephrase AI so you can ask Gemini to rewrite a line or paragraph in the tone you want, with the meaning kept the same. Requires a Rephrase AI account.",
+  "mcpServers": {
+    "rephraseai": {
+      "url": "https://www.rephraseai.com/mcp",
+      "type": "http",
+      "oauth": {
+        "enabled": true,
+        "clientId": "gjUw5lqXbYdslJyH",
+        "scopes": [
+          "rephrase:write",
+          "offline_access"
+        ],
+        "redirectUri": "http://localhost:7777/oauth/callback"
+      }
+    }
+  }
+}
